@@ -13,7 +13,58 @@ function handleOnChange(){
     populateForm();
 }
 
+function handleEditClick(){
+    makeEditable();
+    hideButtons();
+    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleEditSave("+book,id+")\">Save<button>"
+    buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancel\" onclick=\"handleCancelSave()\">Cancel<\button>"
+    document.getElementById("saveButton").innerHTML = buttonHtml;
+    document.getElementById("saveButton").style.display = "inline-block";
+}
 
+function handleNewClick(){
+    makeEditable();
+    hideButtons();
+    blankFields();
+    var buttonHtml = "<button class=\"btn btn-primary btn-lg\" onclick=\"handleNewSave()\">Save<button>"
+    buttonHtml += "<button class=\"btn btn-warning btn-lg btn-cancel\" onclick=\"handleCancelSave()\">Cancel<\button>"
+    document.getElementById("saveButton").innerHTML = buttonHtml;
+    document.getElementById("saveButton").style.display = "inline-block";
+}
+
+function handleRentClick(){
+    myBook.numAvlb--;
+    putBook(myBook.id);
+}
+
+function handleReturnClick(){
+    myBook.numAvlb++;
+    document.getElementById("bookAvlb").value = myBook.numAvlb;
+    putBook(myBook.id);
+}
+
+function handleDeleteClick(){
+    deleteBook();
+}
+
+function handleCancelSave(){
+    populateForm();
+    makeReadOnly();
+    showButtons();
+}
+
+function handleEditSave(id){
+    putBook(id);
+    makeReadOnly();
+    showButtons();
+}
+
+function handleNewSave(){
+    postBook();
+    makeReadOnly();
+    showButtons();
+    blankFields();
+}
 
 
 
