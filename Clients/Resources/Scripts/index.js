@@ -1,3 +1,3 @@
-function handleOnLoad();{
+function handleOnLoad(){
 populateList();
 }
