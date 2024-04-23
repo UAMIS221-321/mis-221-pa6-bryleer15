@@ -23,10 +23,36 @@
             <div class = "col-md-3">
                 <h3>Avaliable Books</h3>
                 <div id = "listBox"></div>
+        </div>
+        <div class = "col-md-6">
+            <h3 class ="inputHeader">Book Information</h3>
+            <form onsubmit= "return false;" method ="post">
+            <label for = "bokTitle">Title: </label>
+            <input type="text" id="bookTitle" name="author" readOnly><br><br>
+            <label for="bookAuthor">Author:</label>
+            <input type="text" id="bookAuthor" name="author" readonly><br><br>
+            <label for="BookGenre">Genre:</label>
+            <input type="text" id="bookGenre" name="genre" readonly><br><br
+            <label for="bookAv1b">Number Avaliable:</label>
+            <input type="text" id="bookAvlb" name="avlb" readonly><br><br>
+            <label for="bookIsbn">ISBN: </label>
+            <input type="text" id="bookIsbn" name="isbn" readonly><br><br>
+            <label for="bookLength" >Length: </label>
+            <input type="text" id="bookLength" name="length" readOnly><br><br>
+            <label for="bookCover"> Cover URL: </label>
+            <input type="text" id="bookCover" name="cover" readonly><br><br>
+            </form>
+            </div class= "btnRow">
+            <button id="newButton" class="btn btn-primary" onclick = "handleNewClick()"> New</button>
+            <button id="editButton" class="btn btn-primary" onclick="handleEditClick()"></button>Edit</button>
+            <button id="deleteButton" class="btn btn-danger" onclick="handleDeleteClick()">Delete</button>
+            <br>
+            <button id="rentButton" class="btn btn-secondary btn-ig btnBottom" onclick="handleRentClick()">Rent</button>
+            <button id="returnButton" class="btn btn-secondary btn-lg btnBottom" onclick="handleReturnClick()"></button>
+            <span id="saveButton"></span>
             </div>
-            <div class = "col-md-6">
-                <h3>Book Information</h3>
-            </div>
+
+                </div>
                 <div class = "col-md-3">
                 <h3>Cover Art</h3>
                 <div is = "picBox"></div>
