@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mis-221-pa6-bryleer15")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+413e6c52bc63c349d3481956d201b938ec45960b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89fb82e64591fb5f8aad961a13deb3f74f81781b")]
 [assembly: System.Reflection.AssemblyProductAttribute("mis-221-pa6-bryleer15")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mis-221-pa6-bryleer15")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
