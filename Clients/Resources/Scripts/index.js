@@ -37,6 +37,15 @@ function hideButtons(){
     document.getElementById("returnButton").style.display = "none";
 }
 
+function showButtons(){
+    document.getElementById("newButton").style.display = "inline-block";
+    document.getElementById("editButton").style.display = "inline-block";
+    document.getElementById("deleteButton").style.display = "inline-block";
+    document.getElementById("rentButton").style.display = "inline-block";
+    document.getElementById("returnButton").style.display = "inline-block"
+    document.getElementById("saveButton").style.display = "none"
+}
+
 function makeEditable(){
     document.getElementById("bookTitle").readOnly=false;
     document.getElementById("bookAuthor").readOnly=false;
