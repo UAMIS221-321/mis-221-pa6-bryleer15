@@ -2,6 +2,21 @@ function handleOnLoad(){
 populateList();
 }
 
+function handleOnChange(){
+    const selectedId = document.getElementById("selectListBox").value;
+    bookList.forEach((book)=>{
+        if(book.id == selectedId){
+            myBook = book;
+        }
+    });
+
+    populateForm();
+}
+
+
+
+
+
 function populateForm(){
     document.getElementById("bookTitle").value = myBook.title;
     document.getElementById("bookAuthor").value = myBook.author;
