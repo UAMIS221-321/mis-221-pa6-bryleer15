@@ -72,11 +72,11 @@ function populateForm(){
     document.getElementById("bookTitle").value = myBook.title;
     document.getElementById("bookAuthor").value = myBook.author;
     document.getElementById("bookGenre").value = myBook.genre;
-    document.getElementById("BookAvlb").value = myBook.numAvlb;
+    document.getElementById("bookAvlb").value = myBook.numAvlb;
     document.getElementById("bookIsbn").value = myBook.isbn;
     document.getElementById("bookLength").value = myBook.length;
     document.getElementById("bookCover").value = myBook.cover;
-    var html = "<img class = \"coverArt\" src= \"" + myBook.cover + "\"></img";
+    var html = "<img class=\"coverArt\" src=\"" + myBook.cover + "\">";
     document.getElementById("picBox").innerHTML = html;
 }
 
